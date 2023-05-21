@@ -7,11 +7,11 @@ bricks:
   # hello: 0.1.0+1
   # Bricks can also be imported via remote git url.
   bdaya_page:
-    path: ../../bdaya_page
+    path: ../bdaya_page
   bdaya_route:
-    path: ../../bdaya_route
+    path: ../bdaya_route
   bdaya_form:
-    path: ../../bdaya_form
+    path: ../bdaya_form
   # Uncomment the following lines to import the "widget" brick from git.
   # widget:
   #   git:
