@@ -2,21 +2,20 @@
 
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
-
 some mason bricks that we use for our internal workflow
 
 > Note that we use `bdaya_flutter_common` as a base library for the generated code
 > We also need `build_runner` as a dev dependency.
 
-* bdaya_form
+* [bdaya_form](https://brickhub.dev/bricks/bdaya_form)
     - generate a form using `reactive_forms_annotations` + `reactive_forms_generator`
-* bdaya_page
+* [bdaya_page](https://brickhub.dev/bricks/bdaya_page)
     - generate a simple page (view + controller)
-* bdaya_route 
+* [bdaya_route](https://brickhub.dev/bricks/bdaya_route)
     - generate a page that reacts to route changes from `go_router`
 
 
-## Usage
+## Usage on git
 1. Activate [mason_cli](https://pub.dev/packages/mason_cli)
     - `dart pub global activate mason_cli`
 2. Add Bricks
