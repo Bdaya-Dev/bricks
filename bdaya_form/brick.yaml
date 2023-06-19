@@ -4,7 +4,7 @@ description: A brick to create a view + controller + form (using reactive_forms_
 # The following defines the brick repository url.
 # Uncomment and update the following line before publishing the brick.
 repository: https://github.com/Bdaya-Dev/bricks
-version: 0.1.0+1
+version: 0.2.0+1
 environment:
   mason: ">=0.1.0-dev.49 <0.1.0"
 

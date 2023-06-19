@@ -31,7 +31,7 @@ class {{name.pascalCase()}}View extends StatelessWidget {
   //TODO: Replace T with the expected modal result
   static Future<T?> showModal<T>(
     BuildContext context, {
-    {{name.pascalCase()}}FormParameters? params,
+    required {{name.pascalCase()}}FormParameters params,
   }) async {
     return await showDialog<T>(
       context: context,
