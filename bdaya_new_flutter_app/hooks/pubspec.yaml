@@ -1,0 +1,13 @@
+name: bdaya_new_flutter_app
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  clock: ^1.1.1
+  equatable: ^2.0.5
+  mason: ^0.1.0
+
+dev_dependencies:
+  mocktail: ^1.0.3
+  test: ^1.25.2
