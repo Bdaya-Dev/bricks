@@ -3,7 +3,7 @@ import 'package:mason/mason.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:test/test.dart';
 
-import '../pre_gen.dart' as pre_gen;
+import '../post_gen.dart' as pre_gen;
 
 class _MockHookContext extends Mock implements HookContext {}
 
