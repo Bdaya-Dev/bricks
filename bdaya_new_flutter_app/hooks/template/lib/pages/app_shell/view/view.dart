@@ -1,8 +1,8 @@
-import '../../common.dart';
+import '../../../common.dart';
 import 'controller.dart';
 
-class DashboardShellView extends StatelessWidget {
-  const DashboardShellView({
+class AppShellView extends StatelessWidget {
+  const AppShellView({
     super.key,
     required this.controller,
     required this.child,
@@ -17,7 +17,7 @@ class DashboardShellView extends StatelessWidget {
     List<Object?>? keys,
   }) {
     return HookBuilder(
-      builder: (context) => DashboardShellView(
+      builder: (context) => AppShellView(
         controller: useBdayaViewController(
           hookMode: hookMode,
           instanceName: instanceName,
@@ -30,7 +30,7 @@ class DashboardShellView extends StatelessWidget {
     );
   }
 
-  final DashboardShellController controller;
+  final AppShellController controller;
   final Widget child;
 
   @override

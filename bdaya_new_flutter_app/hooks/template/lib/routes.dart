@@ -25,7 +25,7 @@ class AppRouteNames {
   // static const kForgetPassword = 'forget_password';
   // static const kResetPasswordVerification = 'reset_password_verification';
   // static const kNewPassword = 'new_password';
-  static const kHome = 'home';
+  static const kCounter = 'counter';
   // static const kDashboard = 'dashboard';
 }
 
@@ -48,7 +48,7 @@ List<RouteBase> appRoutesList() => [
             redirect: (context, state) {
               if (state.uri.path == '/') {
                 return state.namedLocation(
-                  AppRouteNames.kHome,
+                  AppRouteNames.kCounter,
                   queryParameters: state.uri.queryParameters,
                 );
               }
@@ -56,31 +56,18 @@ List<RouteBase> appRoutesList() => [
             },
           ),
           //public pages
-          // ShellRoute(
-          //   navigatorKey: publicShellNavigatorKey,
-          //   builder: (context, state, child) =>
-          //       PublicShellView.hooked(child: child),
-          //   routes: [
-          //     GoRoute(
-          //       path: '/language',
-          //       name: AppRouteNames.kLanguage,
-          //       builder: (context, state) => HookBuilder(
-          //         builder: (context) => LanguageScreenView(
-          //           controller: useBdayaViewController(),
-          //         ),
-          //       ),
-          //     ),
-          //     GoRoute(
-          //       path: '/onboarding',
-          //       name: AppRouteNames.kOnboarding,
-          //       builder: (context, state) => HookBuilder(
-          //         builder: (context) => OnBoardingScreenView(
-          //           controller: useBdayaViewController(),
-          //         ),
-          //       ),
-          //     ),
-          //   ],
-          // ),
+          ShellRoute(
+            navigatorKey: publicShellNavigatorKey,
+            builder: (context, state, child) =>
+                PublicShellView.hooked(child: child),
+            routes: [
+              GoRoute(
+                path: '/${AppRouteNames.kCounter}',
+                name: AppRouteNames.kCounter,
+                builder: (context, state) => CounterView.hooked(),
+              )
+            ],
+          ),
 
           // //auth page
           // GoRoute(
@@ -94,20 +81,20 @@ List<RouteBase> appRoutesList() => [
           // ),
 
           // // dashboard pages
-          ShellRoute(
-            navigatorKey: dashboardShellNavigatorKey,
-            builder: (context, state, child) {
-              return HookBuilder(
-                builder: (context) => DashboardShellView(
-                  controller: useBdayaViewController(),
-                  child: child,
-                ),
-              );
-            },
-            routes: [
-              //
-            ],
-          ),
+          // ShellRoute(
+          //   navigatorKey: dashboardShellNavigatorKey,
+          //   builder: (context, state, child) {
+          //     return HookBuilder(
+          //       builder: (context) => DashboardShellView(
+          //         controller: useBdayaViewController(),
+          //         child: child,
+          //       ),
+          //     );
+          //   },
+          //   routes: [
+          //     //
+          //   ],
+          // ),
         ],
       ),
     ];

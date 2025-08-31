@@ -1,4 +1,4 @@
-import '../../common.dart';
+import '../../../../common.dart';
 
 @lazySingleton
 class PublicShellController extends BdayaCombinedController {

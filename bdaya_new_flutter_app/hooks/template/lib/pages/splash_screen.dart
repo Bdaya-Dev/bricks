@@ -45,11 +45,8 @@ class _SplashScreenState extends State<SplashScreen> {
         if (snapshot.connectionState != ConnectionState.done) {
           //if not done, show loading
           return const Scaffold(
-            body: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                CircularProgressIndicator.adaptive(),
-              ],
+            body: Center(
+              child: CircularProgressIndicator.adaptive(),
             ),
           );
         }
