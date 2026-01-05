@@ -1,0 +1,4 @@
+analyzer:
+  exclude:
+    - __brick__/**
+    - lib/template/**
